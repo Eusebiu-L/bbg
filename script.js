@@ -2,20 +2,20 @@ function setup(){
     createCanvas (800,600);
 }
 function draw(){
-<<<<<<< HEAD
-    background("green");
+
+background("yellow");
+smilefaceEusebiu();
   smilyFaceRafha();
 }
 function smilyFaceRafha(){
     background("white");
-=======
-    background("yellow");
-    smilefaceEusebiu();
+
+    
 }
 function smilefaceEusebiu(){
         //body
 
->>>>>>> 77b468d433c46196259a909024720315d852daa4
+
 stroke("black");
 circle(400,300,50);
 //eyes
@@ -37,13 +37,12 @@ fill("yellow");
 stroke("red");
 arc(400, 307.5, 20, 10, 0, Math.PI)
 //obrajori
-<<<<<<< HEAD
+
 }
 
 
 
 
 
-=======
-}
->>>>>>> 77b468d433c46196259a909024720315d852daa4
+
+
