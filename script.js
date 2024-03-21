@@ -2,8 +2,11 @@ function setup(){
     createCanvas (800,600);
 }
 function draw(){
-    //body
-background("yellow");
+    background("green");
+  smilyFaceRafha();
+}
+function smilyFaceRafha(){
+    background("white");
 stroke("black");
 circle(400,300,50);
 //eyes
@@ -19,13 +22,13 @@ circle(390,290,2);
 circle(410,290,2);
 
 //mounth
-fill("lime");
+fill("yellow");
 stroke("red");
 arc(400, 307.5, 20, 10, 0, Math.PI)
 //obrajori
-
-
-
-
-
 }
+
+
+
+
+
