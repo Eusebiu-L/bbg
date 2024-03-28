@@ -1,3 +1,5 @@
+let smDavidX= 400;
+let smDavidY= 300;
 function setup(){
     createCanvas (800,600);
 }
@@ -7,7 +9,7 @@ background("white");
 
 
 smilefaceEusebiu(500,300);
-smilefaceDavid(400,300);
+smilefaceDavid(smDavidX--,smDavidY);
 //smilyFaceRafha();
 }
 function smilyFaceRafha(){
