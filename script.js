@@ -5,7 +5,7 @@ function draw(){
 
 background("yellow");
 smilefaceEusebiu();
-  smilyFaceRafha();
+smilyFaceRafha();
 smilefaceDavid()
 }
 function smilyFaceRafha(){
