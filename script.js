@@ -34,18 +34,12 @@ circle(390,290,4);
 circle(410,290,4);
 
 //mounth
-fill("yellow");
+fill("lime");
 stroke("red");
 arc(400, 307.5, 20, 10, 0, Math.PI)
 //obrajori 
 }
-function setup(){
-    createCanvas (800,600);
-}
-function draw(){
-    background("yellow");
-    smilefaceDavid();
-}
+
 function smilefaceDavid(){
         //body
 
