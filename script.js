@@ -3,40 +3,42 @@ function setup(){
 }
 function draw(){
 
-background("yellow");
-smilefaceEusebiu();
-smilefaceDavid(200,300);
+background("white");
 
+
+smilefaceEusebiu(500,300);
+smilefaceDavid(400,300);
+//smilyFaceRafha();
 }
 function smilyFaceRafha(){
     background("white");
 
     
 }
-function smilefaceEusebiu(){
+function smilefaceEusebiu(x,y){
         //body
 
 
 stroke("black");
-circle(400,300,50);
+circle(x,y,50);
 //eyes
 //ellipse(390,290,10,5);
 //ellipse(410,290,10,5);
 
 stroke("black");
-circle(390,290,10);
-circle(410,290,10);
+circle(x-10,y-10,10);
+circle(x+10,y-10,10);
 
 //pupils
 stroke("blue");
 fill("blue");
-circle(390,290,4);
-circle(410,290,4);
+circle(x-10,y-10,4);
+circle(x+10,y-10,4);
 
 //mounth
-fill("yellow");
+fill("lime");
 stroke("red");
-arc(400, 307.5, 20, 10, 0, Math.PI)
+arc(x, y+7.5, 20, 10, 0, Math.PI)
 //obrajori 
 }
 
