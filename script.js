@@ -1,17 +1,25 @@
+let tableWidth =800 ;
+let tableHeigh= 600;
+let smEusebiuX = 500;
+let smEusebiuY = 400;
+let directionX= 1;
+
+
 function setup(){
-    createCanvas (800,600);
+    createCanvas (tableWidth,tableHeigh); 
 }
 function draw(){
 
-background("yellow");
-smilefaceEusebiu(500,300);
+background("yellow"); 
+checkLimitsSMEusebiu();
+  smilefaceEusebiu(smEusebiuX, smEusebiuY);
   smilyFaceRafha(400,300);
   smilefaceDavid(400,300);
 
 }
 
 function smilyFaceRafha(x,y){
-    background("white");
+   
 stroke("black");
 circle(x,y,50);
 
@@ -34,10 +42,15 @@ arc(x, y+7, 20, 10, 0, Math.PI)
 //obrajori
 
 }
+function checkLimitsSMEusebiu(){
+  if(smEusebiuX >= tableWidth)
+  directionX *= -1;
+  smEusebiuX += directionX;  
+}
 
 function smilefaceEusebiu(x,y){
         //body
-
+fill("lime");
 stroke("black");
 circle(x,y,50);
 //eyes
