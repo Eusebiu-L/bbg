@@ -1,17 +1,32 @@
+let tableHeigth=600;
+let tableWidth=800;
+
+let smRafhaX=400;
+let smRafhaY=300;
+
+let directionX=1;
+
 function setup(){
-    createCanvas (800,600);
+    createCanvas (tableWidth,tableHeigth);
 }
 function draw(){
 
 background("yellow");
+
+checkLimitsSMRafha();
+
 smilefaceEusebiu(500,300);
-  smilyFaceRafha(400,300);
+  smilyFaceRafha(smRafhaX ,smRafhaY);
   smilefaceDavid(400,300);
 
 }
-
+function checkLimitsSMRafha(){
+  if(smRafhaX >= tableWidth) 
+    directionX *=-1;
+  smRafhaX+= directionX;
+}
 function smilyFaceRafha(x,y){
-    background("white");
+ 
 stroke("black");
 circle(x,y,50);
 
