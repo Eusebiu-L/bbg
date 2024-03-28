@@ -5,8 +5,8 @@ function draw(){
 
 background("yellow");
 smilefaceEusebiu();
-smilyFaceRafha();
-smilefaceDavid()
+smilefaceDavid(200,300);
+
 }
 function smilyFaceRafha(){
     background("white");
@@ -39,35 +39,28 @@ stroke("red");
 arc(400, 307.5, 20, 10, 0, Math.PI)
 //obrajori 
 }
-function setup(){
-    createCanvas (800,600);
-}
-function draw(){
-    background("yellow");
-    smilefaceDavid();
-}
-function smilefaceDavid(){
-        //body
 
+function smilefaceDavid(x,y){
+//body
 stroke("black");
-circle(400,300,50);
+circle(x, y,50);
 //eyes
-//ellipse(390,290,10,5);
-//ellipse(410,290,10,5);
+ellipse(x-10,y-10,10,5);
+ellipse(x+10,y-10,10,5);
 
 stroke("black");
-circle(390,290,10);
-circle(410,290,10);
+circle(x-10,y-10,10);
+circle(x+10,y-10,10);
 
 //pupils
 stroke("red");
 fill("blue");
-circle(390,290,4);
-circle(410,290,4);
+circle(x-10,y-10,4);
+circle(x+10,y-10,4);
 
 //mounth
 fill("blue");
 stroke("red");
-arc(400, 307.5, 20, 10, 0, Math.PI)
+arc(x, y+10, 20, 10, 0, Math.PI)
 //obrajori
 }
