@@ -3,10 +3,8 @@ let tableHeigh= 600;
 let smEusebiuX = 500;
 let smEusebiuY = 400;
 let directionX= 1;
-
-
 function setup(){
-    createCanvas (tableWidth,tableHeigh); 
+  createCanvas (tableWidth,tableHeigh);  
 }
 function draw(){
 
@@ -72,6 +70,11 @@ fill("lime");
 stroke("red");
 arc(x, y+7.5, 20, 10, 0, Math.PI)
 //obrajori 
+}
+function cheklimitSMDavid(){
+    if(smDavidX >= tableWidht)
+    directionX *= -1;
+    smDavidX += directionX;
 }
 
 function smilefaceDavid(x,y){
