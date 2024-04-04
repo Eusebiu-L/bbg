@@ -1,9 +1,10 @@
 let smRafhaX=400;
 let smRafhaY=300;
+let directionXRapha= 1;
 function checkLimitsSMRafha(){
     if(smRafhaX >= tableWidth) 
-      directionX *=-1;
-    smRafhaX+= directionX;
+      directionXRapha *=-1;
+    smRafhaX+= directionXRapha;
   }
   function smilyFaceRafha(x,y){
     background("white");
@@ -15,7 +16,7 @@ function checkLimitsSMRafha(){
  //circle(410,290,5);
  stroke("black");
  ellipse(x-10,y-10,2);
- ellipse(x+110,y-10,2);
+ ellipse(x+10,y-10,2);
  //pupils
  stroke("blue");
  fill("blue");

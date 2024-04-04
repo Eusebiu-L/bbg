@@ -1,9 +1,10 @@
 let smDavidX= 400;
 let smDavidY= 300;
+let directionXDavid = 1;
 function cheklimitSMDavid(){
     if(smDavidX >= tableWidht)
-    directionX *= -1;
-    smDavidX += directionX;
+    directionXDavid *= -1;
+    smDavidX += directionXDavid;
   }
   function smilefaceDavid(x,y){
     //body

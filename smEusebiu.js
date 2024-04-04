@@ -1,9 +1,10 @@
-let smEusebiuX = 200;
+let smEusebiuX = 500;
 let smEusebiuY = 400;
+let directionXEusebiu = 1;
 function checkLimitsSMEusebiu(){
     if(smEusebiuX >= tableWidth)
-    directionX *= -1;
-    smEusebiuX += directionX; 
+    directionXEusebiu *= -1;
+    smEusebiuX += directionXEusebiu; 
      
   }
   function smilefaceEusebiu(x,y){
@@ -29,5 +30,5 @@ function checkLimitsSMEusebiu(){
   fill("lime");
   stroke("red");
   arc(x, y+7.5, 20, 10, 0, Math.PI)
-  //obrajori 
+  
   }

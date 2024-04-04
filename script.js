@@ -1,18 +1,16 @@
 let tableWidht= 800;
 let tableHeigth=600;
-let directionX= 1;
+
 function setup(){
   createCanvas (tableWidht, tableHeigth);  
 }
 function draw(){
-
-background("yellow"); 
-checkLimitsSMEusebiu();  
-cheklimitSMDavid();
-checkLimitsSMRafha();
-  
-  smilefaceEusebiu(smEusebiuX,smEusebiuY);
-  smilefaceDavid(smDavidX,smDavidY);
+background("yellow");
+  checkLimitsSMEusebiu();
+  smilefaceEusebiu(smEusebiuX, smEusebiuY);
+  checkLimitsSMRafha();
   smilyFaceRafha(smRafhaX,smRafhaY);
-
+  cheklimitSMDavid();
+  smilefaceDavid(smDavidX,smDavidY);
+  
 }
