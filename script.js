@@ -1,23 +1,29 @@
-let tableWidth =800 ;
-let tableHeigh= 600;
-let smEusebiuX = 500;
+let smDavidX= 400;
+let smDavidY= 300;
+let smEusebiuX = 200;
 let smEusebiuY = 400;
+let tableWidht= 800;
+let tableHeight=600;
 let directionX= 1;
 function setup(){
-  createCanvas (tableWidth,tableHeigh);  
+  createCanvas (tableWidht, tableHeight);  
 }
 function draw(){
 
 background("yellow"); 
-checkLimitsSMEusebiu();
-  smilefaceEusebiu(smEusebiuX, smEusebiuY);
-  smilyFaceRafha(400,300);
-  smilefaceDavid(400,300);
+  cheklimitSMDavid();
+  //checkLimitsSMEusebiu();
+  smilefaceEusebiu(smEusebiuX,smEusebiuY);
+  smilefaceDavid(smDavidX,smDavidY);
 
 }
-
+function checkLimitsSMRafha(){
+  if(smRafhaX >= tableWidth) 
+    directionX *=-1;
+  smRafhaX+= directionX;
+}
 function smilyFaceRafha(x,y){
-   
+   background("white");
 stroke("black");
 circle(x,y,50);
 
@@ -43,7 +49,8 @@ arc(x, y+7, 20, 10, 0, Math.PI)
 function checkLimitsSMEusebiu(){
   if(smEusebiuX >= tableWidth)
   directionX *= -1;
-  smEusebiuX += directionX;  
+  smEusebiuX += directionX; 
+   
 }
 
 function smilefaceEusebiu(x,y){
@@ -72,11 +79,10 @@ arc(x, y+7.5, 20, 10, 0, Math.PI)
 //obrajori 
 }
 function cheklimitSMDavid(){
-    if(smDavidX >= tableWidht)
-    directionX *= -1;
-    smDavidX += directionX;
+  if(smDavidX >= tableWidht)
+  directionX *= -1;
+  smDavidX += directionX;
 }
-
 function smilefaceDavid(x,y){
 //body
 stroke("black");
