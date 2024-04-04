@@ -1,13 +1,16 @@
-let smDavidX= 400;
-let smDavidY= 300;
-let directionXDavid = 1;
+let smDavid={
+    x: 400,
+    y: 400,
+   directionX: 1,
+}
 function cheklimitSMDavid(){
-    if(smDavidX >= tableWidht)
-    directionXDavid *= -1;
-    smDavidX += directionXDavid;
+    if(smDavid.x >= tableWidth || smDavid.x<=0)
+    smDavid.directionX *= -1;
+    smDavid.x += smDavid.directionX;
   }
   function smilefaceDavid(x,y){
     //body
+    fill("blue");
     stroke("black");
     circle(x, y,50);
     //eyes
@@ -25,7 +28,7 @@ function cheklimitSMDavid(){
     circle(x+10,y-10,4);
     
     //mounth
-    fill("yellow");
+    fill("blue");
     stroke("red");
     arc(x, y+10, 20, 10, 0, Math.PI)
     //obrajori

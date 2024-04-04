@@ -1,20 +1,20 @@
-let smEusebiuX = 500;
-let smEusebiuY = 400;
-let directionXEusebiu = 1;
+let smEusebiu = {
+    x: 600,
+    y: 400,
+    directionX: 8,
+    speed: 100,
+} 
 function checkLimitsSMEusebiu(){
-    if(smEusebiuX >= tableWidth)
-    directionXEusebiu *= -1;
-    smEusebiuX += directionXEusebiu; 
+    if(smEusebiu.x >= tableWidth || smEusebiu.x<=0)
+    smEusebiu.directionX *= -1;
+    smEusebiu.x += smEusebiu.directionX; 
      
-  }
+  }                     
   function smilefaceEusebiu(x,y){
     //body
   fill("lime");
   stroke("black");
   circle(x,y,50);
-  //eyes
-  //ellipse(390,290,10,5);
-  //ellipse(410,290,10,5);
   
   stroke("black");
   circle(x-10,y-10,10);

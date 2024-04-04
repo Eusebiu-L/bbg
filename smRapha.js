@@ -1,13 +1,17 @@
-let smRafhaX=400;
-let smRafhaY=300;
-let directionXRapha= 1;
-function checkLimitsSMRafha(){
-    if(smRafhaX >= tableWidth) 
-      directionXRapha *=-1;
-    smRafhaX+= directionXRapha;
-  }
+let smRafha = {
+    x: 400,
+    y: 300,
+    directionX: 1,
+    directionY: 1,
+    speed: 3
+  };
+  function checkLimitsSMRafha(){
+      if(smRafha.x >= tableWidth || smRafha.x <=0)
+           smRafha.directionX *=-1;
+        smRafha.x += smRafha.directionX * smRafha.speed;
+    }
   function smilyFaceRafha(x,y){
-    background("white");
+fill("yellow");
  stroke("black");
  circle(x,y,50);
  
@@ -20,7 +24,7 @@ function checkLimitsSMRafha(){
  //pupils
  stroke("blue");
  fill("blue");
- circle(x-10,y-19,2);
+ circle(x-10,y-10,2);
  circle(x+10,y-10,2);
  
  //mounth

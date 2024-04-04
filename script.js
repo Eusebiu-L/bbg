@@ -1,16 +1,18 @@
-let tableWidht= 800;
+let tableWidth= 800;
 let tableHeigth=600;
 
 function setup(){
-  createCanvas (tableWidht, tableHeigth);  
+  createCanvas (tableWidth, tableHeigth);  
 }
 function draw(){
-background("yellow");
+ 
+  background("purple");
+  
   checkLimitsSMEusebiu();
-  smilefaceEusebiu(smEusebiuX, smEusebiuY);
+  smilefaceEusebiu(smEusebiu.x, smEusebiu.y);
   checkLimitsSMRafha();
-  smilyFaceRafha(smRafhaX,smRafhaY);
+  smilyFaceRafha(smRafha.x,smRafha.y);
   cheklimitSMDavid();
-  smilefaceDavid(smDavidX,smDavidY);
+  smilefaceDavid(smDavid.x,smDavid.y);
   
 }
