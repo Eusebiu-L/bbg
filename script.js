@@ -20,6 +20,11 @@ function draw(){
 
   cheklimitSMDavid();
   smilefaceDavid(smDavid.x,smDavid.y);
+  createPaddleEusebiu();
+
+  createBricksEusebiu();
+
+  
 
    createPaddleRapha();
    createBricksRapha();
