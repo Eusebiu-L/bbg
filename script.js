@@ -5,7 +5,7 @@ let tableHeigth=600;
 
 function setup(){
   createCanvas (tableWidth, tableHeigth);  
-  initBriks
+  initBricksEusebiu();
 }
 function draw(){
  
