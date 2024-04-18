@@ -14,5 +14,10 @@ function draw(){
   smilyFaceRafha(smRafha.x,smRafha.y);
   cheklimitSMDavid();
   smilefaceDavid(smDavid.x,smDavid.y);
+  createPaddleEusebiu();
+
+  createBricksEusebiu();
+
+  
   
 }
